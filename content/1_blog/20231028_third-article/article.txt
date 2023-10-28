@@ -1,0 +1,154 @@
+Title: third article
+
+----
+
+Text:
+
+As a frontend developer, I sometimes need to change the visibility of mobile navigation or other ui elements without using JavaScript. Although it may seem hard at first, you can easily do this with CSS. In this article, I'll show you three easy ways to do it
+
+## 1. Checkbox Hack
+
+The checkbox hack is an ingenious way to use the **:checked** pseudo-class to manipulate other elements.
+
+HTML:
+
+``` html
+<label for="menuToggle" class="menu-toggle">Menu</label>
+<input type="checkbox" id="menuToggle" class="menu-checkbox">
+<nav class="mobile-nav">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+```
+
+CSS:
+
+```CSS
+.menu-toggle {
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  padding: .5rem 1rem;
+}
+
+.menu-checkbox {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.menu-checkbox:checked ~ .mobile-nav {
+  display: block;
+}
+```
+
+[https://codepen.io/joxx/pen/QWzqbrE](https://codepen.io/joxx/pen/QWzqbrE)
+
+## 2. Leveraging the :focus-within pseudo-class
+
+Leveraging the **:focus-within** pseudo-class is another handy trick to toggle visibility.
+
+HTML:
+
+```HTML
+<a href="#" class="menu-toggle">Menu</a>
+<nav class="mobile-nav">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+```
+
+CSS:
+
+```CSS
+.menu-toggle {
+  background-color: #333;
+  color: #fff;
+  padding: .5rem 1rem;
+  text-decoration: none;
+}
+
+.mobile-nav {
+  display: none; 
+}
+
+.menu-toggle:focus-within + .mobile-nav {
+  display: block; 
+}
+```
+
+[https://codepen.io/joxx/pen/MWZEYrg](https://codepen.io/joxx/pen/MWZEYrg)
+
+##3. Using the :target Pseudo-Class
+
+This method revolves around the **:target** pseudo-class which gets triggered when an element with an ID matches the current URL's fragment.
+
+```HTML
+<div id="mobileNav">
+  <a href="#mobileNav" class="menu-toggle menu-open">Menu</a>
+  <a href="#" class="menu-toggle menu-close">Close</a>
+  <nav class="mobile-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+```
+
+CSS:
+
+```CSS
+.menu-toggle {
+  background-color: #333;
+  color: #fff;
+  padding: .5rem 1rem;
+  text-decoration: none;
+}
+
+#mobileNav:not(:target) .mobile-nav,
+#mobileNav:not(:target) .menu-close {
+  display: none;
+}
+
+#mobileNav:target .menu-open {
+  display: none;
+}
+```
+
+[https://codepen.io/joxx/pen/oNJeROV](https://codepen.io/joxx/pen/oNJeROV)
+
+##Conclusion
+
+You can easily change the visibility of mobile navigation using only CSS. This way, frontend developers can create interactive features that are usually made with JavaScript. But, be sure to check if it suits your project's needs and is accessible. In certain situations, using JavaScript might still be a better choice, especially for complicated tasks or to help users using assistive technologies.
+
+```CSS
+#mobileNav:target .menu-open {
+  display: none;
+}
+```
+
+----
+
+Date: 2023-10-28 13:25:00
+
+----
+
+Author: - user://EwtV2Onp
+
+----
+
+Tags: 
+
+----
+
+Uuid: GjKc5lyyXTjlRZE4

@@ -1,0 +1,25 @@
+Title: first article
+
+----
+
+Text:
+
+## Headline for the first article
+
+Some text for my first article
+
+----
+
+Date: 2023-10-28 07:50:00
+
+----
+
+Author: - user://EwtV2Onp
+
+----
+
+Tags: CSS, Beginner, frontend
+
+----
+
+Uuid: XUJMK75QjKUg94a4
