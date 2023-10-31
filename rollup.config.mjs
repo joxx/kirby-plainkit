@@ -1,16 +1,20 @@
+import sass from 'rollup-plugin-sass';
 import terser from '@rollup/plugin-terser';
 
 export default {
   input: 'src/js/main.js',
   output: [
     {
-      file: 'public/js/bundle.js',
-      format: 'es'
+      file: 'assets/js/bundle.js',
+      format: 'iife'
     },
     {
-      file: 'public/js/bundle.min.js',
-      format: 'es',
-      plugins: [terser()]
-    }
+      file: 'assets/js/bundle.min.js',
+      format: 'iife'
+    },
+  ],
+  plugins: [
+    sass({ output: 'assets/css/styles.css' }),
+    terser()
   ]
 };
