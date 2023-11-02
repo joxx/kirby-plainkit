@@ -34,7 +34,7 @@
   */
   ?>
   <?= css([
-    // 'assets/css/prism.css',
+    'assets/css/prism.css',
     // 'assets/css/lightbox.css',
     'assets/css/styles.css',
     '@auto'

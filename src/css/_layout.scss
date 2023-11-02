@@ -1,0 +1,14 @@
+.container {
+  width: min(calc(80% - 2rem), 60rem);
+  margin-inline: auto;
+}
+
+.full-bleed {
+  box-shadow: 0 0 0 100vmax #ff6c00;
+  clip-path: inset(0 -100vmax);
+}
+
+.inverse {
+  background-color: #ff6c00;
+  color: #222;
+}

@@ -1,0 +1,19 @@
+@use "config" as *;
+@use "corners" as *;
+
+button {
+  @include rounded;
+
+  background: $primary-color;
+  border: 0;
+  border-radius: 4px;
+  color: $secondary-color;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0.5rem 0.8rem;
+
+  &:hover {
+    background-color: #777;
+    cursor: pointer;
+  }
+}
