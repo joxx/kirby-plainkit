@@ -1,1 +1,9 @@
-<h1><?= $page->title() ?></h1>
+<?php snippet('header') ?>
+
+  <section class="article">
+
+    <?= $page->text()->kirbytext() ?>
+
+  </section>
+
+<?php snippet('footer') ?>

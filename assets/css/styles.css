@@ -11,7 +11,8 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+figure {
   margin: 0;
 }
 
@@ -47,6 +48,7 @@ html:focus-within {
   }
 }
 button {
+  border-radius: 3px;
   background: #333;
   border: 0;
   border-radius: 4px;
@@ -181,6 +183,11 @@ h2 {
 
 p {
   margin-bottom: 2.5rem;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
 }
 
 footer {

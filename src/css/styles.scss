@@ -120,6 +120,11 @@ p {
   margin-bottom: 2.5rem;
 }
 
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
 footer {
   background-color: #f0f0f0;
   padding-block: 2.5rem;
