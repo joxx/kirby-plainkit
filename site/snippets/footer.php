@@ -12,7 +12,7 @@
   </main>
 
   <footer class="footer">
-    <div class="grid">
+    <div class="container grid">
       <div class="column" style="--columns: 8">
         <h2><a href="https://getkirby.com">Made with Kirby</a></h2>
         <p>

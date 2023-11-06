@@ -1,7 +1,8 @@
 .container {
-  width: min(calc(80% - 2rem), 60rem);
   margin-inline: auto;
+  width: min(calc(100% - 2rem), 60rem);
 }
+
 
 .full-bleed {
   box-shadow: 0 0 0 100vmax #ff6c00;
