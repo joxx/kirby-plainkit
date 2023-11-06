@@ -2,7 +2,7 @@
 
   <section class="article">
 
-    <?= $page->text()->kirbytext() ?>
+    <?= $page->text()->toBlocks() ?>
 
   </section>
 
