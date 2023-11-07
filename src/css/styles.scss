@@ -19,9 +19,7 @@ body {
 header {
   align-items: center;
   display: flex;
-  margin-inline: auto;
   padding-block: 2rem;
-  width: min(calc(100% - 2rem), 60rem);
 }
 
 .logo {
@@ -93,9 +91,7 @@ nav {
 }
 
 main {
-  margin-inline: auto;
   margin-bottom: 2.5rem;
-  width: min(calc(100% - 2rem), 60rem);
 }
 
 section {
