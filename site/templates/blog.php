@@ -34,11 +34,11 @@
       <p><?= $article->text()->excerpt(300) ?></p>
       <a href="<?= $article->url() ?>">Read more…</a>
       <hr>
-      <a class="button-5" href="<?= $article->url() ?>">Link as button</a>
+      <a class="btn" href="<?= $article->url() ?>">Link as button</a>
       <hr>
-      <button class="button-5" href="<?= $article->url() ?>">button</button>
+      <button class="btn" href="<?= $article->url() ?>">button</button>
       <hr>
-      <button  href="<?= $article->url() ?>">button</button>
+      <button href="<?= $article->url() ?>">button</button>
 
     </article>
 
