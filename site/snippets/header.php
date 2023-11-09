@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="<?= $site->title()->esc() ?> | <?= $page->title()->esc() ?>"/>
+  
   <title><?= $site->title()->esc() ?> | <?= $page->title()->esc() ?></title>
 
   <?= css([
     'assets/css/prism.css',
-    // 'assets/css/lightbox.css',
     'assets/css/styles.css',
     '@auto'
   ]) ?>
