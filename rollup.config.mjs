@@ -14,7 +14,7 @@ export default {
     },
   ],
   plugins: [
-    sass({ output: 'assets/css/styles.css' }),
+    sass({ output: 'assets/css/main.css' }),
     terser()
   ]
 };

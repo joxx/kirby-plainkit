@@ -1,4 +1,4 @@
 // src/index.js
-import '../css/styles.scss';
+import '../css/main.scss';
 
 console.log('Hello, Rollup!');

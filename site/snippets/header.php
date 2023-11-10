@@ -1,3 +1,8 @@
+<?php
+/** @var Kirby\Cms\Page $page */
+/** @var Kirby\Cms\Page $site */
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +14,7 @@
 
   <?= css([
     'assets/css/prism.css',
-    'assets/css/styles.css',
+    'assets/css/main.css',
     '@auto'
   ]) ?>
 
