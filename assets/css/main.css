@@ -1,6 +1,7 @@
 :root {
   --primary-color: $primary-color;
   --secondary-color: $secondary-color;
+  --tertiary-color: $tertiary-color;
 }
 
 /* Box sizing rules */
