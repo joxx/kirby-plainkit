@@ -41,7 +41,7 @@
   </footer>
 
   <?= js([
-    'assets/js/prism.js',
+    'assets/prism.js',
     '@auto'
   ]) ?>
 

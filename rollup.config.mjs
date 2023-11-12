@@ -5,17 +5,17 @@ export default {
   input: 'src/js/main.js',
   output: [
     {
-      file: 'assets/js/bundle.js',
+      file: 'assets/bundle.js',
       format: 'iife'
     },
     {
-      file: 'assets/js/bundle.min.js',
+      file: 'assets/bundle.min.js',
       format: 'iife'
     },
   ],
   plugins: [
     scss({
-      fileName: 'hula.css',
+      fileName: 'main.css',
       outputStyle: 'compressed'
     }),
     terser()
