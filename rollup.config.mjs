@@ -1,4 +1,4 @@
-import sass from 'rollup-plugin-sass';
+import scss from 'rollup-plugin-scss';
 import terser from '@rollup/plugin-terser';
 
 export default {
@@ -14,7 +14,10 @@ export default {
     },
   ],
   plugins: [
-    sass({ output: 'assets/css/main.css' }),
+    scss({
+      fileName: 'hula.css',
+      outputStyle: 'compressed'
+    }),
     terser()
   ]
 };
