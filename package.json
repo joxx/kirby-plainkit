@@ -4,6 +4,7 @@
   "description": "Simple Kirby starter, watch and compile your Sass.",
   "main": "index.js",
   "scripts": {
+    "build": "rollup -c",
     "start": "npm-run-all --parallel watch:*",
     "watch:rollup": "rollup -c -w",
     "rollup:help": "rollup --help"
