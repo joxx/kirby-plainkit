@@ -1,12 +1,12 @@
 @use "config" as *;
 @use "reset" as *;
-@use "buttons" as *;
+// @use "buttons" as *;
 @use "corners" as *;
 @use "layout" as *;
 
 body {
   background-color: purple;
-  color: $primary-color;
+  //color: $primary-color;
   font-family: system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;;
   font-size: 1rem;
   line-height: 160%;
@@ -73,7 +73,7 @@ nav {
 
     li {
       a {
-        color: $primary-color;
+        //color: $primary-color;
         text-decoration: none;
 
         &:hover {

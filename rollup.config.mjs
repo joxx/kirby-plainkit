@@ -5,18 +5,17 @@ export default {
   input: 'src/js/main.js',
   output: [
     {
-      file: 'assets/bundle.js',
+      file: 'assets/js/bundle.js',
       format: 'iife'
     },
     {
-      file: 'assets/bundle.min.js',
+      file: 'assets/js/bundle.min.js',
       format: 'iife'
     },
   ],
   plugins: [
     scss({
-      fileName: 'main.css',
-      outputStyle: 'compressed'
+      fileName: 'main.css'
     }),
     terser()
   ]

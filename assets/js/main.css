@@ -1,0 +1,185 @@
+:root {
+  --clr-primary: #333;
+  --clr-secondary: #fefefe;
+  --clr-tertiary: plum;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.65;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  text-underline-offset: 0.08em;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container {
+  margin-inline: auto;
+  width: min(100% - 2rem, 60rem);
+}
+
+.full-bleed {
+  box-shadow: 0 0 0 100vmax #ff6c00;
+  clip-path: inset(0 -100vmax);
+}
+
+.inverse {
+  background-color: #ff6c00;
+  color: #222;
+}
+
+body {
+  background-color: purple;
+  font-family: system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 160%;
+}
+@media (width >= 600px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+header {
+  align-items: center;
+  display: flex;
+  padding-block: 2rem;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 1rem;
+  height: 2rem;
+  position: relative;
+  text-indent: -9999%;
+  width: 3.3rem;
+}
+.logo::before, .logo::after {
+  background-color: #ff6c00;
+  border-radius: 100%;
+  content: " ";
+  height: 2rem;
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  width: 2rem;
+  mix-blend-mode: multiply;
+}
+.logo::after {
+  background-color: #222;
+  left: 1.3rem;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: row-reverse;
+  gap: 2rem;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+nav ul[hidden] {
+  display: none;
+}
+@media (width >= 600px) {
+  nav ul[hidden] {
+    display: flex;
+  }
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+@media (width >= 600px) {
+  nav button {
+    display: none;
+  }
+}
+
+main {
+  margin-bottom: 2.5rem;
+}
+
+section {
+  padding-block: 2rem;
+}
+
+h1 {
+  font-size: 5.5rem;
+  font-weight: 300;
+  line-height: 100%;
+  margin-block: 2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 110%;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin-bottom: 2.5rem;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding-block: 2.5rem;
+}
+footer p {
+  margin-bottom: 0;
+  text-align: center;
+}

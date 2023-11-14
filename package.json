@@ -6,6 +6,7 @@
   "scripts": {
     "build": "rollup -c",
     "start": "npm-run-all --parallel watch:*",
+    "copy": "recursive-copy 'src' 'dist'",
     "watch:rollup": "rollup -c -w",
     "rollup:help": "rollup --help"
   },
@@ -27,6 +28,7 @@
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
     "npm-run-all": "^4.1.5",
+    "recursive-fs": "^2.1.0",
     "rollup": "^4.3.0",
     "rollup-plugin-scss": "^4.0.0",
     "sass": "^1.69.5",
