@@ -4,9 +4,9 @@
 button {
   @include rounded;
 
-  background: $primary-color;
+  background: var(--clr-primary);
   border: 0;
-  color: $secondary-color;
+  color: var(--clr-secondary);
   font-size: 1rem;
   line-height: 1;
   padding: 0.5rem 0.8rem;

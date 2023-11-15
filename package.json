@@ -8,6 +8,7 @@
     "start": "npm-run-all --parallel watch:*",
     "copy": "recursive-copy 'src' 'dist'",
     "watch:rollup": "rollup -c -w",
+    "watch:sass": "sass --source-map -w src/css:assets/css",
     "rollup:help": "rollup --help"
   },
   "repository": {
