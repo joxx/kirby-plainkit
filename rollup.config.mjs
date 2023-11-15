@@ -1,4 +1,3 @@
-import scss from 'rollup-plugin-scss';
 import terser from '@rollup/plugin-terser';
 
 export default {
@@ -14,9 +13,6 @@ export default {
     },
   ],
   plugins: [
-    scss({
-      fileName: 'main.css'
-    }),
     terser()
   ]
 };
