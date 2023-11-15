@@ -13,8 +13,8 @@
   <title><?= $site->title()->esc() ?> | <?= $page->title()->esc() ?></title>
 
   <?= css([
-    'assets/prism.css',
-    'assets/main.css',
+    'assets/css/main.css',
+    'assets/css/prism.css',
     '@auto'
   ]) ?>
 
