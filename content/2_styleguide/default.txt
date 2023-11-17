@@ -2,8 +2,8 @@ Title: Styleguide
 
 ----
 
-Uuid: rkHHhJGRTx7WNPbX
+Text: [{"content":{"text":"# H1 Headline\n## H2 Headline\n### H3 Headline\n\n<a class=\"btn\" href=\"<?= $article->url() ?>\">Link as button</a>\n<button class=\"btn\">button</button>\n<button\">button</button>"},"id":"6e6bf847-9d34-4df4-863b-b2b0fbde63cf","isHidden":false,"type":"markdown"}]
 
 ----
 
-Text: 
+Uuid: rkHHhJGRTx7WNPbX

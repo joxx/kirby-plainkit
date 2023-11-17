@@ -33,13 +33,6 @@
       <h2><?= $article->title()->html() ?></h2>
       <p><?= $article->text()->excerpt(300) ?></p>
       <a href="<?= $article->url() ?>">Read more…</a>
-      <hr>
-      <a class="btn" href="<?= $article->url() ?>">Link as button</a>
-      <hr>
-      <button class="btn" href="<?= $article->url() ?>">button</button>
-      <hr>
-      <button href="<?= $article->url() ?>">button</button>
-
     </article>
 
   <?php endforeach ?>
