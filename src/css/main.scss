@@ -1,5 +1,6 @@
 @use "config" as *;
 @use "reset" as *;
+@use "text" as *;
 @use "buttons" as *;
 @use "corners" as *;
 @use "layout" as *;
@@ -98,23 +99,7 @@ section {
   padding-block: 2rem;
 }
 
-h1 {
-  font-size: 5.5rem;
-  font-weight: 300;
-  line-height: 100%;
-  margin-block: 2rem;
-}
 
-h2 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  line-height: 110%;
-  margin-bottom: 1.5rem;
-}
-
-p {
-  margin-bottom: 2.5rem;
-}
 
 img {
   max-inline-size: 100%;

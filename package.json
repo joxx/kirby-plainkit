@@ -4,11 +4,12 @@
   "description": "Simple Kirby starter, watch and compile your Sass.",
   "main": "index.js",
   "scripts": {
-    "build": "rollup -c",
-    "start": "npm-run-all --parallel watch:*",
+    "build": "rollup -c && npm run build:css",
+    "build:css": "sass --style=compressed src/css/main.scss assets/css/main.css",
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:js": "rollup -c -w",
+    "dev:css": "sass --source-map -w src/css:assets/css",
     "copy": "recursive-copy 'src' 'dist'",
-    "watch:rollup": "rollup -c -w",
-    "watch:sass": "sass --source-map -w src/css:assets/css",
     "rollup:help": "rollup --help"
   },
   "repository": {
