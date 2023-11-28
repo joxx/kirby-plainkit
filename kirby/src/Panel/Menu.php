@@ -32,9 +32,13 @@ class Menu
 	 */
 	public function areas(): array
 	{
-		// get from config option
-		// which areas should be listed in the menu
-		$areas = App::instance()->option('panel.menu');
+		// get from config option which areas should be listed in the menu
+		$kirby = App::instance();
+		$areas = $kirby->option('panel.menu');
+
+		if ($areas instanceof Closure) {
+			$areas = $areas($kirby);
+		}
 
 		// if no config is defined…
 		if ($areas === null) {
@@ -211,16 +215,6 @@ class Menu
 				'text' => I18n::translate('logout')
 			]
 		];
-
-		if (App::instance()->system()->license() === false) {
-			array_unshift($options, [
-				'icon'     => 'key',
-				'dialog'   => 'registration',
-				'text'     => I18n::translate('license.register'),
-				'variant'  => 'filled',
-				'theme'    => 'notice',
-			]);
-		}
 
 		return $options;
 	}
